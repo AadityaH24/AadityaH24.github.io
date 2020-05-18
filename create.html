@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Digital Assignment 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">	 -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-4">
+							<div id="fh5co-logo">SQL COMMANDS<span>.</span></div>
+						</div>
+						<div class="col-xs-8 text-right menu-1">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="active"><a href="about.html">DDL</a></li>
+								<li><a href="contact.html">DML</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+		<div id="fh5co-about">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+						<h2>SQL| CREATE</h2>
+						<p>
+							There are two CREATE statements available in SQL:
+						</p>
+						<p>CREATE DATABASE
+						</p>
+						<p>CREATE TABLE
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="fh5co-about">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+						<h2>CREATE DATABASE</h2>
+						<p>
+							In SQL the very first step to store the data in a well structured manner is to create a database. The CREATE DATABASE statement is used to create a new database in SQL.
+						</p>
+						<pre><p>Syntax:
+
+CREATE DATABASE database_name;
+
+</p></pre>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="fh5co-about">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+						<h2>CREATE TABLE</h2>
+						<p>
+							To store the data we need a table. The CREATE TABLE statement is used to create a table in SQL.
+						</p>
+						<pre><p>SYNTAX:
+CREATE TABLE table_name(
+column1 data_type(size),
+column2 data_type(size),
+column3 data_type(size),
+....
+);
+
+</pre>
+						WHERE table_name: name of the table.<br />
+						column1: name of the first column.<br />
+						data_type: Type of data we want to store in the particular column. <br />
+
+						size: Size of the data we can store in a particular column.</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="fh5co-about">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 fh5co-heading">
+
+						<h2>EXAMPLE CODE</h2>
+						<p>
+							<pre>
+                    CREATE TABLE Persons (
+                    PersonID int,
+                    LastName varchar(255),
+                    FirstName varchar(255),
+                    Address varchar(255),
+                    City varchar(255)
+                    );</pre>The above is the sql command to CREATE a TABLE named 'Persons'</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Flexslider -->
+		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- Main -->
+		<script src="js/main.js"></script>
+
+</body>
+
+</html>
