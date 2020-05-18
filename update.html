@@ -61,69 +61,27 @@
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 
-						<h2>DDL| CREATE</h2>
+						<h2>DML| UPDATE</h2>
 						<p>
-							There are two CREATE statements available in SQL:
-						</p>
-						<p>CREATE DATABASE
-						</p>
-						<p>CREATE TABLE
-						</p>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
-						<h2>CREATE DATABASE</h2>
-						<p>
-							In SQL the very first step to store the data in a well structured manner is to create a database. The CREATE DATABASE statement is used to create a new database in SQL.
+							The UPDATE statement in SQL is used to update the data of an existing table in database.<br /> We can update single columns as well as multiple columns using UPDATE statement as per our requirement.
 						</p>
 						<pre><p>Syntax:
 
-CREATE DATABASE database_name;
+UPDATE table_name SET column1 = value1, column2 = value2,... 
+WHERE condition1;
 
-</p></pre>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
-						<h2>CREATE TABLE</h2>
-						<p>
-							To store the data we need a table. The CREATE TABLE statement is used to create a table in SQL.
-						</p>
-						<pre><p>SYNTAX:
-CREATE TABLE table_name(
-column1 data_type(size),
-column2 data_type(size),
-column3 data_type(size),
-....
-);
-
-</pre>
-						WHERE table_name: name of the table.<br />
-						column1: name of the first column.<br />
-						data_type: Type of data we want to store in the particular column. <br />
-
-						size: Size of the data we can store in a particular column.</p>
+</pre>Where table_name: name of the table<br />
+						column1: name of first , second, third column....<br />
+						value1: new value for first, second, third column....<br />
+						condition: condition to select the rows</p>
 
 					</div>
 				</div>
 
 			</div>
 		</div>
+
+
 
 		<div id="fh5co-about">
 			<div class="container">
@@ -133,13 +91,8 @@ column3 data_type(size),
 						<h2>EXAMPLE CODE</h2>
 						<p>
 							<pre>
-                    CREATE TABLE Persons (
-                    PersonID int,
-                    LastName varchar(255),
-                    FirstName varchar(255),
-                    Address varchar(255),
-                    City varchar(255)
-                    );</pre>The above is the sql command to CREATE a TABLE named 'Persons'</p>
+ UPDATE Student SET NAME = 'PRATIK' WHERE Age = 20;
+ UPDATE Student SET NAME = 'PRATIK', ADDRESS = 'SIKKIM' WHERE ROLL_NO = 1;</pre>The above is the SQL command to UPDATE records with given conditions.</p>
 
 					</div>
 				</div>

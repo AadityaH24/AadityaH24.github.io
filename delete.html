@@ -61,69 +61,25 @@
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 
-						<h2>DDL| CREATE</h2>
+						<h2>DML| DELETE</h2>
 						<p>
-							There are two CREATE statements available in SQL:
-						</p>
-						<p>CREATE DATABASE
-						</p>
-						<p>CREATE TABLE
-						</p>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
-						<h2>CREATE DATABASE</h2>
-						<p>
-							In SQL the very first step to store the data in a well structured manner is to create a database. The CREATE DATABASE statement is used to create a new database in SQL.
+							The DELETE Statement in SQL is used to delete existing records from a table. <br />
+							We can delete a single record or multiple records depending on the condition we specify in the WHERE clause.
 						</p>
 						<pre><p>Syntax:
 
-CREATE DATABASE database_name;
+DELETE FROM table_name WHERE some_condition;
 
-</p></pre>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
-						<h2>CREATE TABLE</h2>
-						<p>
-							To store the data we need a table. The CREATE TABLE statement is used to create a table in SQL.
-						</p>
-						<pre><p>SYNTAX:
-CREATE TABLE table_name(
-column1 data_type(size),
-column2 data_type(size),
-column3 data_type(size),
-....
-);
-
-</pre>
-						WHERE table_name: name of the table.<br />
-						column1: name of the first column.<br />
-						data_type: Type of data we want to store in the particular column. <br />
-
-						size: Size of the data we can store in a particular column.</p>
+</pre>WHERE<br /> table_name: name of the table<br />
+						some_condition: condition to choose particular record.</p>
 
 					</div>
 				</div>
 
 			</div>
 		</div>
+
+
 
 		<div id="fh5co-about">
 			<div class="container">
@@ -133,13 +89,9 @@ column3 data_type(size),
 						<h2>EXAMPLE CODE</h2>
 						<p>
 							<pre>
-                    CREATE TABLE Persons (
-                    PersonID int,
-                    LastName varchar(255),
-                    FirstName varchar(255),
-                    Address varchar(255),
-                    City varchar(255)
-                    );</pre>The above is the sql command to CREATE a TABLE named 'Persons'</p>
+ DELETE FROM Student WHERE NAME = 'Ram';
+ DELETE FROM Student WHERE Age = 20;</pre>If Ram is a unique key in the databse then only 1 record is deleted.<br />
+							Multiple people may have age = 20 therefore in the second command multiple records may be deleted simultaeneously </p>
 
 					</div>
 				</div>

@@ -61,63 +61,21 @@
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 
-						<h2>DDL| CREATE</h2>
+						<h2>DDL| COMMENTS</h2>
 						<p>
-							There are two CREATE statements available in SQL:
-						</p>
-						<p>CREATE DATABASE
-						</p>
-						<p>CREATE TABLE
-						</p>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
-						<h2>CREATE DATABASE</h2>
-						<p>
-							In SQL the very first step to store the data in a well structured manner is to create a database. The CREATE DATABASE statement is used to create a new database in SQL.
+							In this set we will learn about writing comments in any SQL snippet.<br />
+							Comments can be of three types<br />Single line comments,
+							Multi line comments,
+							In line comments
 						</p>
 						<pre><p>Syntax:
-
-CREATE DATABASE database_name;
-
-</p></pre>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
-						<h2>CREATE TABLE</h2>
-						<p>
-							To store the data we need a table. The CREATE TABLE statement is used to create a table in SQL.
-						</p>
-						<pre><p>SYNTAX:
-CREATE TABLE table_name(
-column1 data_type(size),
-column2 data_type(size),
-column3 data_type(size),
-....
-);
+-- single line comment<br/>
+/* multi line comment
+second line */<br/>
+SELECT * FROM /* (inline comment;) */ 
 
 </pre>
-						WHERE table_name: name of the table.<br />
-						column1: name of the first column.<br />
-						data_type: Type of data we want to store in the particular column. <br />
-
-						size: Size of the data we can store in a particular column.</p>
+						</p>
 
 					</div>
 				</div>
@@ -125,27 +83,9 @@ column3 data_type(size),
 			</div>
 		</div>
 
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 fh5co-heading">
 
-						<h2>EXAMPLE CODE</h2>
-						<p>
-							<pre>
-                    CREATE TABLE Persons (
-                    PersonID int,
-                    LastName varchar(255),
-                    FirstName varchar(255),
-                    Address varchar(255),
-                    City varchar(255)
-                    );</pre>The above is the sql command to CREATE a TABLE named 'Persons'</p>
 
-					</div>
-				</div>
 
-			</div>
-		</div>
 
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
